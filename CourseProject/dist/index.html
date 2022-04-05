@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Responsive Portfolio Website</title>
+</head>
+
+<body id='bg-img'>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Mohiuddin Emon</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link active-link">
+              <i class="uil uil-user nav__icon"></i> About
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#skills   " class="nav__link active-link">
+              <i class="uil uil-file-alt nav__icon"></i> Skills
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link active-link">
+              <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link active-link">
+              <i class="uil uil-scenery nav__icon"></i> Project
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link active-link">
+              <i class="uil uil-message nav__icon"></i> Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+      <div class="nav__btns">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a href="http://dribble.com/" target="_blank" class="home__social-icon">
+              <i class="uil uil-dribbble"></i>
+            </a>
+
+            <a href="https://github.com/" target="_blank" class="home__social-icon">
+              <i class="uil uil-github"></i>
+            </a>
+          </div>
+         
+
+           <image src="https://otakukart.com/wp-content/uploads/2021/11/Goku-base-form.jpg" alt="/CourseProject/dist/img/images" />
+             
+
+        
+
+          <div class="home__data">
+            <h1 class="home__title">Hi I'm Mohiuddin Emon</h1>
+            <h3 class="home__subtitle">Front end Developer</h3>
+            <p class="home__description">
+                Hi, I am a front-end web developer who focus on Typescript,
+            ReactJS, Redux, React Query, Material-UI. 
+            </p>
+            <a href="#contact" class="button button-flex">
+              Contact me<i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button-flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle"> My introduction</span>
+
+      <div class="about__container container grid">
+        <img class="image_goku" style="height:141px;"
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFhUVGBgXFRUVFRUVFhUVFxgXFhUVFRUYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUvLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAIEBhwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAIDBQYBB//EAEwQAAEDAQMHCAYIBAIKAwEAAAEAAgMRBBIhBSIxQXGxsgYjUWFyc4HBEyQykbPCM0JigqHD0fAUUmOidIMHNENTZJKTo9LhFVTTFv/EABsBAAEFAQEAAAAAAAAAAAAAAAQAAQIDBQYH/8QAPBEAAQIDBAcGBAQGAwEAAAAAAQACAxEhBBIxQVFhcYGxwfAFEyIykaFygrLRFCNC4TNSYpKiwgY08ST/2gAMAwEAAhEDEQA/APDk4JqcFYEy6VwrutcKc4JJLoXF0KbcUk92rYpI9Dtg3hRu1bFJHodsG8K9qgpWey7sjeg3Ixnsu7I3oNyaNh1oSanFP1eP6JpT/q+KtGJ6ySTrR7Ttp3qZ30Q7buFqhtHtO2nepnfRDtu4Wq0eYdZJjgppvoT3p4QgmfruRs30J708IQkekePCkcDvUh9k3X71INLdv6Jp0+B3KRozm7RvCqlVSbj1qRE4zG+O9RQ+Z3Ii0DMb471FANG07lIYKrMp7BmfvrTIRg7s+YUjPY/fWmwDB/Z8wpjNO1Rv1bP1Rkw+j7sfMhH6tn6o6ZuEfdje5EQR4gnKHIwbs+Z6KsvsP7J440ORg3Z80iLsjcx/ZPGxFwBUdZqDsVpsht5l/c/O5ei5Hj9Vh67nAFgMhM5h3c/O5elZIj9Vh+5wBC24V+bkhbX/AA4fwO+ty815Ttwh7ocRVExlVo+UzPoO6G8qmijXRWYShDrNY8CJKEEbklmeNq9Z/wBI7L0QH2/kavMclxZw8F65yjaw1fIaMjN93/K0ADrJoB1lZnaMQMjwnnK9yVbXlzIrW4m7L/MfuvN2WQUorPJmSi84CgGJOgADSSdSMdYL01G4NLQ+pODQWh2J6BXSmMt7JpBCwhlljIMjjm+kxADnDSBXEN10xxoBVHtsmi7iRPYOsNKzINnfFeWuNAbplm7CQ5nIZVki35PDHANzqiowOI0jT71K+yY3PrHTvohbRypbJLchc2MH2pn3Q6laZrDgAeuppjQaFPPyiiLhHZnl8hzRK6uaNBc29i92B1AVI0hAfiX0BFZe/wBlY/sxky8PkL3o2pxJqcMJg0rjImezsEckTRVzAK0/mrR4+7Vo2hw1LNviB0q55OSh4NPZLnNbrzW80HE+91VWzilRrCLsjyC5pNaH1/cIe2AAMcwSBBEvh06TIt4yWNtESmyCzPl7iTijVj/C55UOTobssw/oyb2Lc7wFpGr7Ih8cGERs4hFchmc63/P/AClh8sDnX9p29ehchmc63ZP+UsHltvPP7Tt6UITtD9g+py6C9+e34R9MNTZaHNWTuP1VNaBneA3FX2Wm81Y/8OdxVNaG0f4DcUE9vgHzfUUXZT4ApspR0kk7P6IbJTfa7LuFWeV2c5J2PMILIrfpOw7cso+Q7uCMd59w4qneM5/ZPkgiPa/etWEgz37D5IEj2vDeEHEFE4wQpXUiks0qa4uhcXQnCS7rTSnBNKk7BJdXQuJ4U2pk52rYnx6HbBvCY7VsT49Dtg3hXNUVKz2Xdkb0GUYz2Xdkb0IU0Xr0SanlO+r4phT/AKviiAKnekU60e07ad6mP0Q7Z4WqK0+27ad5Up+ib23cLU7akdZJHDrSFNN9Ce9PCELFpHjwoqX6E96eEIWEY+B4VIih3px9lymPv3KdgzmbfMKOnnuREbc5m0bwqwFNgr1qRFpHNs2HeobMMRtO5GWqPm2bDvUFjZiNp4VNoooyqUmt5vw83Jlmbmv7HmEU1nNV6v1UVkbmydg8QVgbQpQxgh3t0bP1VlaWYRdy3e5BSN0bB5q1tbMIe4b8yJhN8Teskzs0A5uazs/PIi7K3Mf2DxxqN7M1nZ/MlRdjbzcnYPxIkdAbUdZquJRarIMfq7+5/MevS8lR+qQf5XwwvPMgM9Vd3H5ki9Nyc31SHZH8MIK3iRPxcln2135MP4HfW9eWcp21MPdN4yqiCJXvKFtTD3TeIqus8BK3obpQx1mVz8KJKF68Vb5Dg19a0v8ApDylQNgafaF9+3QxvuvGnWFQZFNDRO5XOc23SGQVBc0jriLaAD7tBtBWF2jWK2evko2Vx/O+Uet7lMb1Ycq8rgQRCIik4JeRpDI6XW7DeBPUANZWdEhbYJHjTJM3HoYKgfiCgcvQSRGME3o6O9E8a2mhu/jUdr3KHKQ/hfQkaS11Touhz3Eg9N4t8KrN8sx1q9Ec435P9hrnM7zjowqAEPAwk0xNMSdNMaDDRUmgA0mqJtAdFL6MOJlbg4A1uPOBZ2h7O0HVir3IBihswtAuudEJJS3A1nAoy90XQaUOtyzeS45HvAjqZHGrpHYUJ0vJ01xw6yKY0SMwQogtLXaQZfv9lveTl1gEVfo2va4j+YtcXBp6iaV6Qehdy+2khP8AMGu8S0YfjTwQlnayzxMYw/SXWNOtz3Oe1z9mDnbG7FeZRyfUh0jgxoawVOkm7nUbp01RMKIGRAScpe49cUDGa6JBLWAkhwOybTMnICgNTLWsqV2OHGR39J4/Fqscq2Nsb7ra6ATepUVxAIGgqCzN9rsHeFrNihzbwzWfGnDm04ih9UuRDc5vZn3wrzzLreef2nbyvTuRsBF001Sj3+ipuK865QR867aeJF2VwdaYktHMrp+8BjMP9A+mGpMtjmbF/hzucqa1DnPAcLlf5aZzVj/w7uF6pLUOd+6OFyi9vhHzfUVo2U+Fu5WmW4+ck7sbwqvITfpOw/hV/l2HOk7n8ahU/J5uEvYfwrDl+X6I9/mPwjmqJ7c+TY7yVdTF3hxBW0recl7Lt4Va1uLvDiCHi4dak6Ackk5JZJxU1xdC4uhIJl0JpTguFTdgkknBcXQrGhMnu1bE+PQ7YN4TH6tgUkWh2wcQV7AolSx+y7sjehNaMhGa/sjeEIlEHW5M1PKd9Xx/RcITiM3x8gi7tSkU61+27tO3lPI5pvbPC1Ntoz3dp3EVNTmW94eFqTBUbuCc4HrMKWVvMHvTwhCwDHwdwI2Zvq5748LULZRiNjuBPdod6duK7d89yIhbnR9obwoyNztyLgZnxdobwoNar2CbutKNtkfMx7HcSEsDMRtdwq4t8XMR7HcSAyZHnN2u4FcxvhO9VgeIpMj5jw/8lFY2ZkvY+YI+Nnq/gfmUFibmTd2eMKwNodqeEKjegpWaNnmVb29lBB3A/MVfO3Edkbyru2s/1b/DMPxUTBb42qDzJpOpVMjcyPsfmTo2xM5uXsH4sKgtLKNjH2T8acIywDmZj9g/EhRsASI6zQ8QgyOz7rW5BHqzu4/NkXpNhHqcOyP4YXnOQx6se4/MkXo9g/1OHZH8MLM7Sx+bks+2fwYfwO+t682yrDedEP6TeIrscICPmZiw/YA/uKic1aJiTouNEQ3bu3ilZGUdtVvy3ye2VrQ0gTRUxPssiNSfSO6a+yBUm8cM6qgyTC2/ed7LAXnYBXyVPla02maKSRsZ9HevTSEUDnFwq1rnYDGgAGNAFk21wc4CeHPDhVafZwMnPlOdJagCXE7Lzd9cq1+TrDJaKekeRBHUY4V+s4DdXb1BWuUMjS21zWwNgggs4ddkkcaurdqXAAgaNWgOxJJUdjl9LchY5jWxQtkdfJa2R5J5sOGIdgSOt2xG5DtDHObHOx7mF1TEND6Yse99RVrTSjBgKkkEnDEtcdzYgY0yGZ16NwlL9l0vZlhZEgujPbMnAZAVBMxpIM9UhnWvyRCwQSh7yI5HR5zSKhxd6JzWuIP8rX6NSrWSuhmkggbekL3xsJ0ihLL4aMAaY3joHjW7ypkl8TYqxOc8kuZC0ZrZTI0sa+ntvNJK09looNNTV2jJzmc56TGeQsnkF0NqaF1138mJqa0NP5SiGWiG4tkamnt+1EFHsMZgfNvhFdgJoNJoZn0nMFFWq02cPijivTOgibBG1hIaS2/fkLhqz7uGJuE0oQtVkyzPb6xaaekOLWit0amgV9p2gknThqIWZsGUrLZ82ztvavSFpNezQZx9zdeK1FnykXsvPgEbOmV3pJHHS6gF0XjWuPToAoiJHDHTvy3rPxBcDdIAlOchKgcZA+XIk4kVM5KptRq4mtXE1O3zUuRsnPmkLW/y0J1AJ1lsbppaMbS9+9K3lmhisUWOk6TrcerqRtptXdNDWibjgED2d2eI5LnmUNuLuQn1vQNpyYyzxxsYMM4uOtxppP4rxnlBZSZHYa17MMtsnF24aY41qRdpU016Qqi1cimTAvilBrqu08OoqPZ9r/CuJj0JzO0rXjwy+MH2UTaBgKGUhgDKeGU9dV5tlmA+isf+GcP7XrP2uPnqHoHA5erZX5KvbGx0haxsTHNJJ01BwaBpXneUrNz/AIfK5a8G0Q4zfCZyve5J5oqyRHNLWvBBpjTQrHlBHnS918wVHyaZ9N2H8K0/KGLOl7kH+5qoOTDPpew/hWTL8k7uC2CZuPwt4rOSDnJuy7e1VjBi/wAOIK3lbzs3ZdxNVXEMX/d4whoop1qVxHEqrckk/Uksh2KZMTguJycJLo0ppTxpTSpnBJdTun99CantGn96wr2hRTn6tg806HQ7YOILkg9nYPNPg0P2fMxXNFVEmQ9FNCM1/ZG9B0R9n9mTsN8kCFNzZneosOPWQUrxo8PNOIzPveQXXjAeHmk76P7/AJBGFtUjltXbcOcd2ncRUoHMs7w8LVHb/pH9p3EVOPoGd4eBqi0VG7gVJxoeswp5x6ue+PA1QWMYjY74aKm/1Y98eFqhsTakbHfCUpUO0qTcRuTbu525HxN5yLtt3tQjRufuVjE3nIO23iaoNHD7oqEPENvMK5ypH6vEfsu41WZJZnN2v4FfZXb6rD2XcSqsiszm9p/w1awfln5uarAq7rQnsZ6t4ebwhcnt5ufuvzGqwib6qdh+dDWJnNzn+ieNoVsvNt5poXmA2qvmbW7sG9y0GUYqCzH/AIZm+VUjhiNg3uW/hsTZm2eKme6zNuHr5wXTtVrSGuDjkqLQ8MbXqixeVGGkPXED/wB6dEZPZzM3Y/NgWjteQnObELpq1lCKY1Ekh80Tk/k3IWvaGON5tKXftxu+VXsjMbU9VWZ+JYGNbOol7CS7kQerHuPzJV6LYR6pFsj4Fk25GfBEWvaWkxXQD1PcfNa+yD1WMdFzhWZborYlW4XuSrtLg6CwaGOB/vceawkzxRnZG8qATg4FQ5Qcasp/uxvKihiN4ErU7sYlce2GLsyrqzztaC12IcAKdNHNJFdVQKHaVf8AKa5QMe2rGuYWxjBpoyjWuA+qA45o00Cybxj4larlZnYdngas20QWGKwnOc911HWa0vh2d0jgRLe18+SprbAwwkxhoBmc66G4RiSNjQOoVY+lMAHNCztgy/bnSxRQwRRxCWMzvF58jmRyNDmmR7ibtLwo0AaRrotTk+yyAVDbzTg4Y4g6aHz1KOC3x2SaSOQ82yuN3OJc0Ou3rtAaPoTeaPaWF2hAbBfeaaHeRpC6vsLtB1shd28eJvo4HA1pjj7atVb5S2MO9HffgAwUJq7B9K00NvHSKgLz602CaV3oW2eYRxucccM5+c4uLWkNwpQCuGs6Vq7Dl1s0pzmta1t5xcbopUZrQ6h6CXEDR10bDasrwSGjHekaMb0bhcJ0OBfoOAb7NeumlB2J7Ib7z5Uz6ktLtKDGiwTDhAknIECY2kGWnCuGclFkzIcUWc+OhGIrQkU+051QT1NUVrlMjh+AGgY4qOS22XNJnpepg0Oc1p0G87RStek0pgiYLbDG8OErXuGIbGQ8YaKuGGnat2FaILAX3pn0lq+64u02G3RntgiCWtnWRvTkZXiaYDCe4aNQZ4LEwNDQZKCtK4nbqWTytlSW0E3jgGmjRo1IXKHKVscjW0aXOc2/pJukit4nWRWlKURWULNdkeBoAI3JWB0J7i4VdpPLUp9ui1QIbWuk2GaBrcpfzHMy3TRHJllGNJ/q/lKw5K3xKdN3Eu6ELkF7WsbVtaF+BNBobUHp1K6tbprTFWEXcTebUY9dVZankuc04GkzgKlSs4DzDiiZcwAhoEy6jZ13a6ErNcssoulcP5bslBsBFVgrYys9er8t5W1ytZy0MY7S1kgOIONDrCzbrNWb7vyPWrYw1sK63AA8UrNaHGMXRMbzZ7TLgi8vw4y9yN7VneTEWE/dv4Vr8uQ/Td15sWd5Kx4S93JwIOX/AM7tgXQCJOIR/S3iVj52c9P2Xb2qpaw5x7PGFoJYa2icfZdvaqu0jOkHRcH94Q8UeEnZyR5dVrdM1mnpLsurZ5lJYpxKSaEkgkpNST26U0p7NKa7SpkUTBdopG6Ds8wuav31LrdB2eYRICinSaG7B5p9n0P2DiYmSaG7E+DQ/YOJitZiouw3jiioBmP7DfJV7VYw+w/u27wgWBWgTcosOO3kFPKMBsb8664c397yCfOM0bG7nrj/AKL/ADPJqLKrBpvXMojnH9p/EVKPoGd6eBqZlIZ7+0/iKk/2DO9PA1UsxG7gr359ZhEy/wCrHvzwhNsA0bH/AAlJKPVnd8eAJWEaNj/gqYwO0qTMRuTGjDwfuVnZxzsHeN4moBgw8H8Ks7MOds3eN4mJ2jHZ90dBHiG3mFossM9Uh7L+JVGQm57dsnwytBlpvqcPYfxql5Psq9nak+Eps/hna7mqR+vaeSkhb6sdh3vQ+Tm1htHdV/vaCj4G+qnYfzEHksc1ae5PxGq4/q281CF5htPFVsrfZ2Dict5HJdNl6rMw/i8+Sxj4vZ7I3vWuyhgLKf8AhGfh6RW3Zkb0FbXAscOsCvSbZlNscLbVC0XpRRxONKYnDprVUR5Y2jOzxgK4Nb/MxvzIXJ1oL7GYj9Zt9n3ZH1p93FUUdkcWy0BJLdH+ZF+iCs9hhTcHgGRkCa0y+25YUS3Ovta1xExOhkJ54acd639gygLbF6N9L5F5jtAJrTyU8WbEGHAtLQRsFFmMiNfHG28CCIx7xI5bKYNlibKXBpNL3WR1IG0MbCfdb5Z01H91Y0ujQg4nxXSccRMjZMS9NgXnL4a3T9gD8SirLY7wLi660EAnHSTQCgBKuW5CDqXJWO6vZ4gFDlnJz4ovR3XCrg5zqYXWgnAjrp7kZaLbJpuHxdZLFsPZ0SJFaIrSGTqQRLPAiYVbaW2ePGSY/dYSfAGhPuVTyj/0gkOHoWBjTg2+1rpHEfWINWsGAwx/SotgJPRU6+jSST+9CxWULT6SQuBIGhvTdGjDp1+JWEbVHtD7rzQaKY5daF2UPsqx2WHfhtmXSleN7DORpQGW8LVt5Utc700pkllbjG+Wd8TY3fzRsjNcBXDr8FJY+U0zSHRtAd/vHtvPJOsF9XE9ZoCs3ZIGtF6lOt1C7wGhv4nYrTJllklPNAga3nDxrpG9C2qJBgCUpu1kyG3KeoDfVa9is8aOQ4mTdQEzsmMNZ9M1a2vKMtocBaJHzO0iG9Rjet9M1uwCvTRFSCQNF4X3n2IgKRMHS5ug060VZLFHZ4yegVc7WaY+A6krZlARtkNKljgAOkua0ivvPuWE+0viOnj7egGA1D1XSQ7JDhMu4e/qTUnbPYgnMEQM1rfhoArUuPRQbhhsAVb/AP0kkrvR2Zlxv91Ol1CAPeB1lUmXbVJaZmRVqRppWgL6ONB0Btz3Femckckltn9E2KKSPAyxOuCW8RS+CRg7oN6g6lqQpQ2tfEF5xqBkBlTPrBYdpeXvdDheFgoSPMTmL2Up/c1WKylY5oImzljCxzyw57i5r7oeL1CBiL1KV9kr0Pk5lOa1WVz5Tec5xALi0UDWhziSAMKUOOiqrMsZImlspscDS97ZmmQupHdAPo2VvUwIq800CnXSws9gEFnihcS9kTx6S5UekL9Iu4VaKBgrqpVatnjHuzEkJtNZU6r7Arm+0rOyI8WYvIv0E5nATMp6hKekjYp7JaHFzYoqUxPpSHZxIz7hOFBSlaajjqWjyXbnNs5FTfc9wHVTT46tqyP8SbhazRE++15weGPN0DqqQK9bupHWG0Pc6EB3tNYXVqaOcSwV677mn3dCg21d4SXq5/ZwgtDYVABKecpSntTcrtoWdl+4lARRj0p8eB6suUD89lNF1+4quiPPeB4Hrp4M7k9R4ri2iT5DS3krLlBCLs5/pgfi39FluSUWE3dycK1eWXV/iB0MG+NZ7kYzCbu37lQP+q6erguhgk99X+UfUVkIo/WbST9WN3ExZlzqmY9bfiBaq1Gktr62O4mrKt0Tfc+I1VWgeH04BbkNuLjp691QSatnmUlybVs8yurCOJTpgSSCQU2pKVmn99CadKfHp/fQUwqxRTxo/fUnDQdnmEgM33/KusGa7Z5hEBRyXX6G7AnQaHbBxMTZNDdgT4fZfs+disaovw3jii7OMx/Yag4mo6EZsnYCHs7cAr4XmPWQUGukD1kFPbG0a37u56ZIOZ+//wCKJt7c1v3Nz0yVvMf5h3BEToNqqhGbZ61HlAZ7u0/iKfTmW96eBq7lIZ7u0/jcnNHNM708DVSzEbuCOijHrNEyt9Xd354Au2AYt2P+CnzN5h3fHgalYW6NknwQrGYHenaK+iiYMPCThVrZ289Zu8bxNVawYfdk4Sraz/T2bvGcTFNmB2fdGwfMNv8AsFqsuM9Th7D+NUXJ1vOM7Unwlo8vM9ShP2H/ABCqzkzEHlh+s0yjaPRYKTf4TtruaEv3b5OEyNmHOijhHqh2H8xC5HbzVp7g8YR8bPVT1DzkQ2RW81aO4PxGq+Xm+Lmk013lDSx+zsG9y1eUrPUWb/CM3yLOTNwbsHEVtMoRXW2av/1mD3F6undlv4Lnu0o5EN8tXvMc0xjwxkHQGkEdIvvBG9W1lY2zxPlNCQDd+076jenEip6gehVjLPeEAOGBr/1HonlNJiyJpBugvcMQLzqBtdjb228R0rK7RjXGUNTPiVmdmWYR7UJ4ANP+I/ZEWTKjSy7ObxfgxzblTU4g4gAA+6o1FXzoaRtANRQU8aY+6iwVllb6SKsrG3fSVc9t4BuaQQdFAS+mOvqw3ZqII7uLbkdHaa0YBUHWsezRnPN1bvatnZDh95KuFN54rP2YXZG10a/FDScspYXz2fA0e8C8K3QHEUAOpENFSKDUqblfkl88z5LK29LE0eljGmYNwe5v221a2mu70ihP7RfdaJ4mg24rn/8Ai7e8e9uQkSRoMwRr07iqd1pbaJXtkoBI2RhpRtKg4imjAH3rz45Oc2Z0L/aaaOpooPrdYIoRtC0vprroph7LwCD9ppuub1G6AadZQ8xvEE4uDfRh2sx6QD00ph46cFy7LU9r3O0j0Na9bV6e+wQ3Q2NP6T6tkKb8t4XIbMzS/Njj09Z1NaNLndQ6caK9dlSzRXmXXSSNYAPSj1Zr79JSxrcHCPAEuoXEk4YBZ51qZQg4uoQ2hoIzqI1Ghx06dNVeN5US5kkdyJ8cjpcyCKSO+YWwNETb7QxrWNoAduJFTKzXBMuxynLnnp3KNu70gCGDLOXsDLKWGWM8pEGVj4x6N7qTmdhbJT0dG3rj4nAANFGlrmai9qpbRanZwdX6npK6b0bSw+/T4q0yXl00iZORSFrmxluIrI+/NLJrL3uoSdApQayY+UEkUjgWGrhg4gZpbt1kdI1Ia0OaYxuiksdfUvTeTLIx7bML7qg4E4Dqe4kZSGf5OMvX5Xe04kebt49y9X5B1dID/SNevFo30PgvHsk2p0Qu3KtvVJFcMAHbdGjqXr/Iy3Mje0VF2RoaHdBwu49B0eIRdpY4RJnDLYFlQHh0GQxz2ms9a0WXYbjm2gOc1oIbMGkZzDg0uBBvUJp00dpFAqnlzao4LM6WR1C57GCho5zgReczWaMLn4dCi5Y8oq1s0TakkXj0lrgSB0CopXXQ7VheV1jnnYJHvLzHjdOgNPt3BqGaz/lKsssUB1w4OohrVZO8DYkqsN4dbMVoGvqK1vXqG9/NrrXXWtVfZCcKtH1q3z1NjaQwbbxadgXlmTLXK0BrXm70F12nTQnQvROTkVyzvndW+8mNhJrRgDXOIwGknUPq9ZR8Hs57HzJGMush6oLtDtJjLO5wGA621kicrmpjPS2Tc5QRjnhs/LepsojNhPSx/mmR/TeHyOXTs8m53FcOwGg1t5I3KDcbWfsDfGqnkS3Nm7EnCri2S1/iR9kcTFV8hW4Tdl+5Dn/rO+XgujggmMZ/yj6isRa2+sWvsScTFmLubP8Ac+I1a21t9Ytfdv4o1laZlp+58Vqrjibf7f8AVb7R4N/2Wan0jZ5lcXbRq2eZXFgHFVpgXQuBdCm1JTRaf30FMKfFp/fQVGVa1RU1M33+SdH7Ltg3hdPs/vqSi9l2z9EQDRRGa5KMBsCfBofs+ZibMcG7E6zaHbPmYptKi/DeOIR0QzX92NyZZm4BOiObJ3Y3JWY4D99CIgkTPWhUDA9fpCJyk3NZ93c9NlbzP+YdwUmUnZrPubnKOV/M/wCYfJTDhdG1NZROHvTMpDPO1/G5SRjmmd78jFHlF2cdr+NydG/m2d58rVW0im5aUSSOlHMP748ASyeMRsk+AmzScw7vjwhcsMns7JPgK6GRIpgKrrRh92ThKtLMOes/eM3tVOyTD7snCrWzzc9Z+8ZxMVrCJHZyKLheYbf9gtxyib6nD2H8apOSL6Ss6C6Wv/SqrbL9pBscXYdxqg5L2gCVnal+CUzHDuXbXc0KwAtiA6TyVsWeqOPSP/0QGQxzc/cn4gUkVr9UI6j+YhsiWikc/cEf9wf+0QHDxfFzCohNLQBjiiI21dGOocRW7yrFX+Gw0Wce7OXngtVCw9AafxK3lrygOYOkehHzJrQ8AtO1c32hDcS/Y36yuW2GkcJJANw4HtyY9WpESWT+JYHA1lYKAVwezHNodYLjTV+FKm12wGOI/Zdr+24qWx2ujXFppgMdFMQhLRDbFh3Sc/SqyYNpi2W0NiM/lbMaQGAy6wWcy5E2FnpAS1wIAHXjhQ41/wDa5yVy4WPHonULvbaQCH4OOIOytdIrqxRXKfIzJ2+lgBMxcXPaXi64PJL3MDvZzjiAaY9SobBk+Szy3pW0cKZumjTpcCMCOsEjSsYsFnhPE/E7oS2Tmu3gWltsLXDy9Tn6Yb816TY8vuukuhlfT60LXltdIDmsBptNUNyMcZZZZL2dSStRQ33yVqW6evxCo7Blh0TxJGcfwcOgjWERyk5SteGyxB0coBvuqKFtKXSRQuGjHDTTZkOc93mWqyExlGAAHQvP+UA/gJZLJeZIW0D2iro60BFQQDeoRo0aiqATOOLiaHVUgeArj4orKz3Wi1OuipcWt6gaNbr0CvmoXWO7WtHEE1cKkGnRWmCPgiBBAJleIBrMngZe32riutEeYGAJGQCZXo8h+i6CdY8RitDYcgRvjY4yuaXVwo0ioJpr6AUNPkQxvpfLm0qHNGOBAJuk6q4iujHqV7bfZohuF3qKe4koO7PtEMXw30Inxmo8mRXic28NNRTDr2da22RuTfpC0XSAcamQUDRpcaNOHj0DWqTJgAoMC4ml9rbtanQ4AEg9dDVbm35UZGXRwxxxtoBmMa2oGgG7p2p3dlMiRGmG6QNTsphX76igrV24+yQjebN2DaDH+rZq9FHDyesEOLmCQ6gXPDR0mhOJ/DqUOWMmiKk1mAELqBzBW7E7AYjSGnAg9NRhhUZtsFUVYsqOjdUF1NBGojrHQtCL2VB7q6yh0rloP/ILYy0d7GM2n9IoBs18VUsvOnBIxLcKG9XTiKacSvQLJYrlmDJI2vfiWsdQ0c7ENrq6yNGKzU0VnlN5jRHINTSBG46xdIoKjooK0VlY8p3WC9VpAoXSOdfd1NwqB7gNXSMR1gc190hdYztaDGg9410gMZ0khbHyOiDqaRX2QCGl/wBYNFTdaNZFNBwwROWnAUjYKNjADdg17TpVpYcosd7OJxAIoBQUrQatWtUGWrSA87fwW1YWlr/GTMYTJPFcp25aDGht7oeCdSBiZTH36qTbxm2bu3V/FB2l9JT1hw/7ciflG2C5B1Mf5qqyhbOdbsPw3hacFwMvm4lDshExmtlmzg1XrTV1r7HzRqHkCM2fsv4VBDbhetXWwflKLkJbAGz7HcKpiuHcP+XgF0MNp70n+kfU5Zq1D1m2d2/ijWUpmWnZH8Vq0tonBtFs6438UazRfmWnYz4rVGKRc/t/1W0PJv8AssvadI2eZXF206Rs8yuLnnCqpUYCeAnUXKKaZdbpTSE8JKU0ykcc399S404HZ+i4SuApw6SaSe84BcYc12zzCaSkCpCIkUYx+DuyErO/AeHkhr+nYuteptjSmoXKdaFYWyaoHhuKjdJzdPtE/gELJLVc9JhTrTiNQBPDbdbJE2uSpO07ynNkzW9qv4BBvf8AvxSD8PFR71Wl01ZyTc2R/Ur+C5ZpqU+98IBV5lwp11SZL57qKbY8kg5HNl3O3I+G085Eeh7fwc1UIk81KyfFproIKmLSrGxZLb5TylWBg6Gu46qtyLbbr27X/jHRUc1uq0Cugeais9qukGvT+IombaJMLdvuq2mV7WtNHbuZLeo/Oocn22jJBXTGR/cqAWs3aV/eKZHaaBwrpFPxqp/isds0wMloRbcRXoA3/qr205ap6IV0RD5lgjaD0qWS3E3cdDQN6Z1pnLehI9na+etbmTK1WM6geNyczLBuuBJ0DT4LDMt+AHR+pPmujKH79yj36APZ4vbpe0lvbPlXM06vNTT5Ua9rQ/Gmg1o5vZP7BXn7cpYU6lL/APKmmlVvi3qFXwrJ3ci2hA5rVGRmqTDxb7wDQ7ULlObm3EPaQKU01qSAMKEHTXSswcoHpTJ7cS27XXuVD4cOSMhRY94XsNiLsc10h2sVcNtM38aKJsuadmO5Aen07PNKKfTsIQZhVmtRtokJLSttZDLgP+zBG1rifNOOUSCDpJcC0fdF/wB9Tgs4bYag9Aou/wAZU11fv8FV+GCu/GHStdFaWtLXNwLSCNVaGoBp7ulG2rKlXV1HHrx1bVif49P/APkDSnuWhZHOhCWSx+0oLLUAcwt1ZsusjxDA49Ljuaj4+VV/22MO/wB680/jlPZ8pXUQ97TUiu9BQbPEb4QZDRIdHfVekW3K8LRX0dXHQLzh5qkOViTXzPuxWTtOVC7Whxb08KKWjH3ULXYhFfQCWoAcJL0vJ2WqMbj/ADeSHt2UjI7A+8gLBQ5UI19K4/KhOtREU3i5TdZA6EGEYS9gFubXlIi60/VqEFPbxeDnHRgB05pB8Fmjlk0pVAy28k1r+6KcO0Ee6X4FgeHDV7f+LbR5Uxmx0gfIm8msp3BJjpBWNblD2sdP/r9FyyW8trjpTujzaW6Ze0kW1kjPUPYkq7ltvO2g9LHD+5v6KoM+bN13eMFDG1ZzjXSD+NEP6XB3XTfVI2iYls5Im/RCz6tnmUl16SDOKYFdSSSTqKS4kkkkkupJJJJFJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJdSSSTpJJJJJkkkl1JJJJcSSSSSXUkkklxcSSSSSSKSSdMkkkkkkupJJJk66uFdSSSK4kkknSSSSSTJJJJJJJJBJJJJJcSSSTpJJJJJky//9k=" alt="" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            Web developer, with extensive knowledge and years of experience,
+            working in web technologies and Ui / Ux design, delivering quality
+            work.
+          </p>
+          <div class="about__info">
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name">
+                Years <br />
+                experience
+              </span>
+            </div>
+
+            <div>
+              <span class="about__info-title">5+</span>
+              <span class="about__info-name">
+                Completed <br />
+                project
+              </span>
+            </div>
+
+            <div>
+              <span class="about__info-title">02+</span>
+              <span class="about__info-name">
+                Companies <br />
+                worked
+              </span>
+            </div>
+          </div>
+          <div class="about__buttons">
+            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button-flex">
+              Dowload CV <i class="uil uil-import button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical level</span>
+
+      <div class="skills__container container grid">
+        <div>
+          <!----Skills 1-->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Front end Developer</h1>
+                <span class="skills__subtitle">More than 4 years</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Javascript</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__javascript"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__react"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----Skills 2-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Back end Developer</h1>
+                <span class="skills__subtitle">More than 4 years</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">90%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Javascript</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__javascript"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__react"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <!----Skills 3-->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Designer</h1>
+                <span class="skills__subtitle">More than 5 years</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__number">10%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__figma"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Sketch</h3>
+                  <span class="skills__number">10%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__sketch"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Photoshop</h3>
+                  <span class="skills__number">85%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__javascript"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title">Qualification</h2>
+      <span class="section__subtitle">My Personal journey</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button--flex qualification__active" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon">
+            </i> Education
+          </div>
+
+          <div class="qualification__button button-flex" data-target="#work">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Work
+            </i>
+          </div>
+        </div>
+        <div class="qualification__sections">
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+            </div>
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION4 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+
+              <div style="border-bottom: 1px solid wheat">
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+          <!--==================== QUALIFICATIONcontent 2 ====================-->
+          <div class="qualification__content qualification__active" data-content id="work">
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div style="border-top: 1px solid wheat;">
+
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+            </div>
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div></div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+
+
+            </div>
+
+            <!--==================== QUALIFICATION1 ====================-->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Computer Engineer</h3>
+                <span class="qualification__subtitle">Vaasa University</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018-2022
+                </div>
+              </div>
+
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION4 ====================-->
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <h2 class="section__title">Services</h2>
+      <span class="section__subtitle">What I offer</span>
+      <div class="services__container container grid">
+        <!--==================== SERVICES1 ====================-->
+        <div class="services__content">
+          <i class="uil uil-web-grid services__icon"></i>
+          <h3 class="services__title">Ui Ux <br> Designer</h3>
+
+
+          <span class="button button--flex button--small button--link services__button">
+            View More
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title"> Ui/Ux <br> Designer</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I develop the user interface.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Web page development</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I create ux element interactions.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I position your company brand.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!--==================== SERVICES2 ====================-->
+        <div class="services__content">
+          <i class="uil uil-arrow services__icon"></i>
+          <h3 class="services__title">Frontend <br> Developer</h3>
+
+
+          <span class="button button--flex button--small button--link services__button">
+            View More
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title"> Frontend <br> Developer</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I develop the user interface.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Web page development</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I create ux element interactions.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I position your company brand.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!--==================== SERVICES3 ====================-->
+        <div class="services__content">
+          <i class="uil uil-pen services__icon"></i>
+          <h3 class="services__title">Branding <br> Designer</h3>
+
+
+          <span class="button button--flex button--small button--link services__button">
+            View More
+            <i class="uil uil-arrow-right button__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <h4 class="services__modal-title"> Branding <br> Designer</h4>
+              <i class="uil uil-times services__modal-close"></i>
+
+              <ul class="services__modal-services grid">
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I develop the user interface.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>Web page development</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I create ux element interactions.</p>
+                </li>
+
+                <li class="services__modal-service">
+                  <i class="uil uil-check-circle services__modal-icon"></i>
+                  <p>I position your company brand.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== Project ====================-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">Project</h2>
+      <span class="section__subtitle">Check out my project</span>
+      <div class="portfolio__container container swiper-container">
+
+        <div class="swiper-wrapper">
+          <!--==================== Project1 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+           
+            <img src="/CourseProject/dist/img/shoppingCart.jpg" alt="" class="portfolio__img">
+           
+            <a href="#!" class="portfolio__detail">
+              <p class="portfolio__title">Shopping cart</p>
+              <p class="portfolio__text">Tech Stack: React, React Query, MUI</p>
+            </a>
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Modern Website</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <div class="button-row">
+                <a href="https://bn-shopping-cart.netlify.app/"
+                  class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-eye"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="" class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-github-alt"></i>
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project1 ================== ==-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/CourseProject/dist/img/burgerOrder.jpg" alt="" class="portfolio__img">
+
+            <a href="#!" class="portfolio__detail">
+              <p class="portfolio__title">Burger Order App</p>
+              <p class="portfolio__text">Tech Stack: React</p>
+            </a>
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Modern Website</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <div class="button-row">
+                <a href="https://myburger-order.netlify.app/"
+                  class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-eye"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="" class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-github-alt"></i>
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== Project1 ====================-->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/CourseProject/dist/img/coffeeShop.jpg" alt="" class="portfolio__img">
+
+            <a href="#!" class="portfolio__detail">
+              <p class="portfolio__title">Coffe Shop</p>
+              <p class="portfolio__text">Tech Stack: Gatsby</p>
+            </a>
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Modern Website</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <div class="button-row">
+                <a href="https://coffee-shop-project-gatsby.netlify.app/"
+                  class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-eye"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="" class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-github-alt"></i>
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content grid swiper-slide">
+            <img src="/CourseProject/dist/img/covid19.jpg" alt="" class="portfolio__img">
+
+            <a href="#!" class="portfolio__detail">
+              <p class="portfolio__title">Covid 19</p>
+              <p class="portfolio__text">Tech stack: Tracker App</p>
+            </a>
+
+            <div class="portfolio__data">
+              <h3 class="portfolio__title">Modern Website</h3>
+              <p class="portfolio__description">Website adaptable to all devices, with ui components and animated
+                interactions.</p>
+              <div class="button-row">
+                <a href="https://covid19-trackerapp-nn.netlify.app/"
+                  class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-eye"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a href="" class="button button--flex button--small portfolio__button">
+                  <i class="uil uil-github-alt"></i>
+                  Github
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== PROJECT IN MIND ====================-->
+    <section class="project section">
+      <div class="project__bg">
+        <div class="project__container container grid">
+          <div class="project__data">
+            <h2 class="project__title">You have a new project</h2>
+            <p class="project__description">Contact me if possible</p>
+            <a href="#contact" class="button button--flex button-white">
+              Contact me
+              <i class="uil uil-message project__icon button__icon"></i>
+            </a>
+          </div>
+
+          <img src="/CourseProject/dist/img/bgi.jpg" alt="" class="project__img">
+        </div>
+      </div>
+    </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial section">
+      <h2 class="section__title">Testinomial</h2>
+      <span class="section__subtitle">Reviewing Project</span>
+      <div class="testimonial__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!--==================== TESTIMONIAL1 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="/CourseProject/dist/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+
+                <div>
+
+                  <h3 class="testimonial__name">Wind Ranger</h3>
+                  <span class="testimonial__client">Teacher</span>
+                </div>
+              </div>
+
+              <div>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text ever s</p>
+          </div>
+
+          <!--==================== TESTIMONIAL2 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+
+
+                <div>
+
+                  <h3 class="testimonial__name">Steve Austin</h3>
+                  <span class="testimonial__client">Consultant</span>
+                </div>
+              </div>
+
+              <div>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text ever s</p>
+          </div>
+
+          <!--==================== TESTIMONIAL3 ====================-->
+          <div class="testimonial__content swiper-slide">
+            <div class="testimonial__data">
+              <div class="testimonial__header">
+                <img src="./assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+
+
+                <div>
+
+                  <h3 class="testimonial__name">Batista</h3>
+                  <span class="testimonial__client">Instructor</span>
+                </div>
+              </div>
+
+              <div>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+                <i class="uil uil-favorite testimonial__icon-start"></i>
+              </div>
+            </div>
+            <p class="testimonial__description">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text ever s</p>
+          </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-testimonial"></div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in Touch</span>
+
+      <div class="contact__container container grid">
+        <div>
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Call me</h3>
+              <span class="contact__subtitle">0408097163</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+
+            <div>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="contact__subtitle">emonmohiuddin@yahoo.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Address</h3>
+              <span class="contact__subtitle">Vaasa</span>
+            </div>
+          </div>
+        </div>
+        <fomr class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="text" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Project</label>
+              <input type="text" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea name="" id="" cols="30" rows="10" class="contact__input"></textarea>
+            </div>
+
+          </div>
+          <div>
+            <a href="" class="button button--flex ">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </fomr>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+              <h1 class="footer__title">emonmohiuddin</h1>
+              <span class="footer__subtitle">Frontend Developer</span>
+            
+          </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer__link">Contact</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a href="" class="footer__social" ><i class="uil uil-facebook"></i></a>
+            <a href="" class="footer__social"><i class="uil uil-instagram"></i></a>
+            <a href="" class="footer__social"><i class="uil uil-twitter-alt"></i></a>
+          
+          </div>
+
+        </div>
+
+      </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+
+  <!--==================== SWIPER JS ====================-->
+  <script src="/CourseProject/dist/js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="/CourseProject/dist/js/main.js"></script>
+
+</body>
+
+</html>
